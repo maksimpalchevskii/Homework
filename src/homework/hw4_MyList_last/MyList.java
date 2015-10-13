@@ -1,6 +1,10 @@
 package homework.hw4_MyList_last;
 
-import java.lang.Override;import java.lang.String;public class MyList<T> {
+import java.lang.Override;
+import java.lang.String;
+
+
+public class MyList<T> {
 	Node<T> first;
 	Node<T> last;
 
