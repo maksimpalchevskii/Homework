@@ -10,18 +10,18 @@ public class MyStack<T> {
         Node next;
     }
 
-    Node top;
+    Node first;
 
     public void add(T data) {
         Node node = new Node();
         node.data = data;
-        node.next = top;
-        top = node;
+        node.next = first;
+        first = node;
     }
 
     public T get() {
-        Node node = top;
-        top = node.next;
+        Node node = first;
+        first = node.next;
         return node.data;
     }
 
@@ -30,7 +30,7 @@ public class MyStack<T> {
 
         String s = "[";
 
-        Node current = top;
+        Node current = first;
 
         while (current != null) {
             s += current.data + " ";
