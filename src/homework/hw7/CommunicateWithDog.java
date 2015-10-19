@@ -18,5 +18,4 @@ public class CommunicateWithDog {
         dog.stroke();
         dog.stroke();
     }
-
 }
